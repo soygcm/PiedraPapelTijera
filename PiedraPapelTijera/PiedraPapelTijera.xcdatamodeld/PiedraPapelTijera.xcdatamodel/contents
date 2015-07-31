@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Match" representedClassName="Match" syncable="YES">
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="moves" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Move" syncable="YES"/>
+        <relationship name="playerA" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+        <relationship name="playerB" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+        <relationship name="winner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+    </entity>
+    <entity name="Move" representedClassName="Move" syncable="YES">
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="moveA" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="moveB" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tournament" representedClassName="Tournament" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="finals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Match" syncable="YES"/>
+        <relationship name="firstMatch" optional="YES" toMany="YES" maxCount="12" deletionRule="Nullify" destinationEntity="Match" syncable="YES"/>
+        <relationship name="quarterFinals" optional="YES" toMany="YES" maxCount="6" deletionRule="Nullify" destinationEntity="Match" syncable="YES"/>
+        <relationship name="semiFinals" optional="YES" toMany="YES" maxCount="3" deletionRule="Nullify" destinationEntity="Match" syncable="YES"/>
+        <relationship name="winner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Tournament" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Player" positionX="-54" positionY="-9" width="128" height="105"/>
+        <element name="Match" positionX="-36" positionY="9" width="128" height="135"/>
+        <element name="Move" positionX="-18" positionY="27" width="128" height="105"/>
+    </elements>
+</model>

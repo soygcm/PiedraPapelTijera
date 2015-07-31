@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C045F6B11B69114B00FC1D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6B01B69114B00FC1D34 /* AppDelegate.swift */; };
+		C045F6B41B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C045F6B21B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodeld */; };
+		C045F6B61B69114B00FC1D34 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6B51B69114B00FC1D34 /* MainController.swift */; };
+		C045F6BB1B69114B00FC1D34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C045F6BA1B69114B00FC1D34 /* Images.xcassets */; };
+		C045F6BE1B69114B00FC1D34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C045F6BC1B69114B00FC1D34 /* LaunchScreen.xib */; };
+		C045F6CA1B69114B00FC1D34 /* PiedraPapelTijeraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6C91B69114B00FC1D34 /* PiedraPapelTijeraTests.swift */; };
+		C045F6D41B692AA500FC1D34 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6D31B692AA500FC1D34 /* UIColorExt.swift */; };
+		C045F6D61B693D8200FC1D34 /* MatchesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6D51B693D8200FC1D34 /* MatchesController.swift */; };
+		C045F6D91B69407E00FC1D34 /* testing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C045F6D81B69407E00FC1D34 /* testing.storyboard */; };
+		C045F6DB1B6949D600FC1D34 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6DA1B6949D600FC1D34 /* SwiftyJSON.swift */; };
+		C045F6DF1B6967D800FC1D34 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6DE1B6967D800FC1D34 /* Match.swift */; };
+		C045F6E31B6967D900FC1D34 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6E21B6967D900FC1D34 /* Move.swift */; };
+		C045F6E51B6967D900FC1D34 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6E41B6967D900FC1D34 /* Tournament.swift */; };
+		C045F6E91B696D7600FC1D34 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F6E81B696D7600FC1D34 /* Player.swift */; };
+		C045F7261B698BDB00FC1D34 /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C045F71F1B698BAE00FC1D34 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C045F7281B6A89A500FC1D34 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045F7271B6A89A500FC1D34 /* MatchCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C045F6C41B69114B00FC1D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C045F6A31B69114B00FC1D34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C045F6AA1B69114B00FC1D34;
+			remoteInfo = PiedraPapelTijera;
+		};
+		C045F71E1B698BAE00FC1D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C045F7181B698BAE00FC1D34 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		C045F7201B698BAE00FC1D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C045F7181B698BAE00FC1D34 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		C045F7221B698BAE00FC1D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C045F7181B698BAE00FC1D34 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		C045F7241B698BB800FC1D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C045F7181B698BAE00FC1D34 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C045F7081B69895F00FC1D34 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C045F7261B698BDB00FC1D34 /* Haneke.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C045F6AB1B69114B00FC1D34 /* PiedraPapelTijera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiedraPapelTijera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C045F6AF1B69114B00FC1D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C045F6B01B69114B00FC1D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C045F6B31B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PiedraPapelTijera.xcdatamodel; sourceTree = "<group>"; };
+		C045F6B51B69114B00FC1D34 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		C045F6BA1B69114B00FC1D34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C045F6BD1B69114B00FC1D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C045F6C31B69114B00FC1D34 /* PiedraPapelTijeraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiedraPapelTijeraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C045F6C81B69114B00FC1D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C045F6C91B69114B00FC1D34 /* PiedraPapelTijeraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiedraPapelTijeraTests.swift; sourceTree = "<group>"; };
+		C045F6D31B692AA500FC1D34 /* UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		C045F6D51B693D8200FC1D34 /* MatchesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesController.swift; sourceTree = "<group>"; };
+		C045F6D81B69407E00FC1D34 /* testing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = testing.storyboard; sourceTree = "<group>"; };
+		C045F6DA1B6949D600FC1D34 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		C045F6DE1B6967D800FC1D34 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		C045F6E21B6967D900FC1D34 /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		C045F6E41B6967D900FC1D34 /* Tournament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		C045F6E81B696D7600FC1D34 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C045F7181B698BAE00FC1D34 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Haneke.xcodeproj; sourceTree = "<group>"; };
+		C045F7271B6A89A500FC1D34 /* MatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C045F6A81B69114B00FC1D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C045F6C01B69114B00FC1D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C045F6A21B69114B00FC1D34 = {
+			isa = PBXGroup;
+			children = (
+				C045F7181B698BAE00FC1D34 /* Haneke.xcodeproj */,
+				C045F6AD1B69114B00FC1D34 /* PiedraPapelTijera */,
+				C045F6C61B69114B00FC1D34 /* PiedraPapelTijeraTests */,
+				C045F6AC1B69114B00FC1D34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C045F6AC1B69114B00FC1D34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6AB1B69114B00FC1D34 /* PiedraPapelTijera.app */,
+				C045F6C31B69114B00FC1D34 /* PiedraPapelTijeraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C045F6AD1B69114B00FC1D34 /* PiedraPapelTijera */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6E61B6967E000FC1D34 /* DataModel */,
+				C045F6E71B69690E00FC1D34 /* Help */,
+				C045F6D81B69407E00FC1D34 /* testing.storyboard */,
+				C045F6B01B69114B00FC1D34 /* AppDelegate.swift */,
+				C045F6D71B693D9000FC1D34 /* Controllers */,
+				C045F6BA1B69114B00FC1D34 /* Images.xcassets */,
+				C045F6BC1B69114B00FC1D34 /* LaunchScreen.xib */,
+				C045F6AE1B69114B00FC1D34 /* Supporting Files */,
+			);
+			path = PiedraPapelTijera;
+			sourceTree = "<group>";
+		};
+		C045F6AE1B69114B00FC1D34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6AF1B69114B00FC1D34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C045F6C61B69114B00FC1D34 /* PiedraPapelTijeraTests */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6C91B69114B00FC1D34 /* PiedraPapelTijeraTests.swift */,
+				C045F6C71B69114B00FC1D34 /* Supporting Files */,
+			);
+			path = PiedraPapelTijeraTests;
+			sourceTree = "<group>";
+		};
+		C045F6C71B69114B00FC1D34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6C81B69114B00FC1D34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C045F6D71B693D9000FC1D34 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6B51B69114B00FC1D34 /* MainController.swift */,
+				C045F6D51B693D8200FC1D34 /* MatchesController.swift */,
+				C045F7271B6A89A500FC1D34 /* MatchCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C045F6E61B6967E000FC1D34 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6E41B6967D900FC1D34 /* Tournament.swift */,
+				C045F6E81B696D7600FC1D34 /* Player.swift */,
+				C045F6E21B6967D900FC1D34 /* Move.swift */,
+				C045F6DE1B6967D800FC1D34 /* Match.swift */,
+				C045F6B21B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodeld */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		C045F6E71B69690E00FC1D34 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				C045F6DA1B6949D600FC1D34 /* SwiftyJSON.swift */,
+				C045F6D31B692AA500FC1D34 /* UIColorExt.swift */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		C045F7191B698BAE00FC1D34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C045F71F1B698BAE00FC1D34 /* Haneke.framework */,
+				C045F7211B698BAE00FC1D34 /* HanekeTests.xctest */,
+				C045F7231B698BAE00FC1D34 /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C045F6AA1B69114B00FC1D34 /* PiedraPapelTijera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C045F6CD1B69114B00FC1D34 /* Build configuration list for PBXNativeTarget "PiedraPapelTijera" */;
+			buildPhases = (
+				C045F6A71B69114B00FC1D34 /* Sources */,
+				C045F6A81B69114B00FC1D34 /* Frameworks */,
+				C045F6A91B69114B00FC1D34 /* Resources */,
+				C045F7081B69895F00FC1D34 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C045F7251B698BB800FC1D34 /* PBXTargetDependency */,
+			);
+			name = PiedraPapelTijera;
+			productName = PiedraPapelTijera;
+			productReference = C045F6AB1B69114B00FC1D34 /* PiedraPapelTijera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C045F6C21B69114B00FC1D34 /* PiedraPapelTijeraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C045F6D01B69114B00FC1D34 /* Build configuration list for PBXNativeTarget "PiedraPapelTijeraTests" */;
+			buildPhases = (
+				C045F6BF1B69114B00FC1D34 /* Sources */,
+				C045F6C01B69114B00FC1D34 /* Frameworks */,
+				C045F6C11B69114B00FC1D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C045F6C51B69114B00FC1D34 /* PBXTargetDependency */,
+			);
+			name = PiedraPapelTijeraTests;
+			productName = PiedraPapelTijeraTests;
+			productReference = C045F6C31B69114B00FC1D34 /* PiedraPapelTijeraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C045F6A31B69114B00FC1D34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ministerio de Salud";
+				TargetAttributes = {
+					C045F6AA1B69114B00FC1D34 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					C045F6C21B69114B00FC1D34 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = C045F6AA1B69114B00FC1D34;
+					};
+				};
+			};
+			buildConfigurationList = C045F6A61B69114B00FC1D34 /* Build configuration list for PBXProject "PiedraPapelTijera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C045F6A21B69114B00FC1D34;
+			productRefGroup = C045F6AC1B69114B00FC1D34 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C045F7191B698BAE00FC1D34 /* Products */;
+					ProjectRef = C045F7181B698BAE00FC1D34 /* Haneke.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C045F6AA1B69114B00FC1D34 /* PiedraPapelTijera */,
+				C045F6C21B69114B00FC1D34 /* PiedraPapelTijeraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C045F71F1B698BAE00FC1D34 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = C045F71E1B698BAE00FC1D34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C045F7211B698BAE00FC1D34 /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = C045F7201B698BAE00FC1D34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C045F7231B698BAE00FC1D34 /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = C045F7221B698BAE00FC1D34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C045F6A91B69114B00FC1D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C045F6D91B69407E00FC1D34 /* testing.storyboard in Resources */,
+				C045F6BE1B69114B00FC1D34 /* LaunchScreen.xib in Resources */,
+				C045F6BB1B69114B00FC1D34 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C045F6C11B69114B00FC1D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C045F6A71B69114B00FC1D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C045F6B61B69114B00FC1D34 /* MainController.swift in Sources */,
+				C045F6E31B6967D900FC1D34 /* Move.swift in Sources */,
+				C045F6D41B692AA500FC1D34 /* UIColorExt.swift in Sources */,
+				C045F6B41B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodeld in Sources */,
+				C045F6E51B6967D900FC1D34 /* Tournament.swift in Sources */,
+				C045F6DB1B6949D600FC1D34 /* SwiftyJSON.swift in Sources */,
+				C045F6D61B693D8200FC1D34 /* MatchesController.swift in Sources */,
+				C045F6B11B69114B00FC1D34 /* AppDelegate.swift in Sources */,
+				C045F7281B6A89A500FC1D34 /* MatchCell.swift in Sources */,
+				C045F6E91B696D7600FC1D34 /* Player.swift in Sources */,
+				C045F6DF1B6967D800FC1D34 /* Match.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C045F6BF1B69114B00FC1D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C045F6CA1B69114B00FC1D34 /* PiedraPapelTijeraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C045F6C51B69114B00FC1D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C045F6AA1B69114B00FC1D34 /* PiedraPapelTijera */;
+			targetProxy = C045F6C41B69114B00FC1D34 /* PBXContainerItemProxy */;
+		};
+		C045F7251B698BB800FC1D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haneke;
+			targetProxy = C045F7241B698BB800FC1D34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C045F6BC1B69114B00FC1D34 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C045F6BD1B69114B00FC1D34 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C045F6CB1B69114B00FC1D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C045F6CC1B69114B00FC1D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C045F6CE1B69114B00FC1D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiedraPapelTijera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C045F6CF1B69114B00FC1D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PiedraPapelTijera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C045F6D11B69114B00FC1D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PiedraPapelTijeraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiedraPapelTijera.app/PiedraPapelTijera";
+			};
+			name = Debug;
+		};
+		C045F6D21B69114B00FC1D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PiedraPapelTijeraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PiedraPapelTijera.app/PiedraPapelTijera";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C045F6A61B69114B00FC1D34 /* Build configuration list for PBXProject "PiedraPapelTijera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C045F6CB1B69114B00FC1D34 /* Debug */,
+				C045F6CC1B69114B00FC1D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C045F6CD1B69114B00FC1D34 /* Build configuration list for PBXNativeTarget "PiedraPapelTijera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C045F6CE1B69114B00FC1D34 /* Debug */,
+				C045F6CF1B69114B00FC1D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C045F6D01B69114B00FC1D34 /* Build configuration list for PBXNativeTarget "PiedraPapelTijeraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C045F6D11B69114B00FC1D34 /* Debug */,
+				C045F6D21B69114B00FC1D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C045F6B21B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C045F6B31B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodel */,
+			);
+			currentVersion = C045F6B31B69114B00FC1D34 /* PiedraPapelTijera.xcdatamodel */;
+			path = PiedraPapelTijera.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C045F6A31B69114B00FC1D34 /* Project object */;
+}
